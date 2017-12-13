@@ -1,0 +1,10 @@
+/*init style */
+.panel_auth{
+    -fx-background-color: indigo;
+}
+.panel_back_end{
+    -fx-background-color: transparent;
+}
+.panel_front{
+    -fx-background-color: white;
+}
