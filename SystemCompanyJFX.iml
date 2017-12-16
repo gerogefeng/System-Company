@@ -6,9 +6,20 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="persistence-unit" />
+          <factory-entry name="Entities" value="9218a771-99d4-4941-b369-56f046ee27ff" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="META-INF:hibernate.cfg.xml" />
+        </datasource-map>
+        <naming-strategy-map>
+          <unit-entry name="META-INF:hibernate.cfg.xml" />
+        </naming-strategy-map>
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -24,6 +35,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.jfoenix:jfoenix:1.8.0" level="project" />
+    <orderEntry type="library" name="Maven: de.jensd:fontawesomefx:8.9" level="project" />
+    <orderEntry type="library" name="Maven: com.guigarage:material-design-fx:0.7" level="project" />
+    <orderEntry type="library" name="Maven: com.guigarage:controls:0.7" level="project" />
+    <orderEntry type="library" name="Maven: com.guigarage:ui-basics:0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.reactfx:reactfx:1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.guigarage:css-helper:0.7" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4-1206-jdbc42" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.2.11.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />

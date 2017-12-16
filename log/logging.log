@@ -1,0 +1,458 @@
+2017-12-14 19:14:44 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:14:44 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:14:45 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:14:45 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:14:45 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:14:45 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:14:45 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:14:45 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:14:45 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:14:45 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:14:46 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:14:47 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:14:47 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@47a2dac9
+2017-12-14 19:14:48 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@54f4b5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:15:09 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:15:09 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:21:06 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:21:06 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:21:06 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:21:06 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:21:07 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:21:07 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:21:07 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:21:07 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:21:07 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:21:07 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:21:07 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:21:08 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:21:08 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@25f2313b
+2017-12-14 19:21:09 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4183e81c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:21:31 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:21:31 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:25:23 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:25:24 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:25:24 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:25:24 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:25:24 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:25:25 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:25:25 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:25:25 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:25:25 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:25:25 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:25:25 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:25:26 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:25:26 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@47a2dac9
+2017-12-14 19:25:27 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76c4e5b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:26:12 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:26:12 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:33:43 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:33:43 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:33:43 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:33:43 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:33:44 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:33:44 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:33:44 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:33:44 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:33:44 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:33:44 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:33:44 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:33:45 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:33:45 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@47a2dac9
+2017-12-14 19:33:46 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76c4e5b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:35:35 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:35:36 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:35:36 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:35:36 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:35:36 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:35:37 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:35:37 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:35:37 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:35:37 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:35:37 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:35:37 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:35:38 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:35:38 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@25f2313b
+2017-12-14 19:35:39 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4183e81c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:36:00 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:36:00 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:37:06 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:37:06 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:37:06 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:37:06 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:37:07 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:37:07 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:37:07 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:37:07 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:37:07 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:37:07 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:37:07 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:37:08 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:37:08 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@47a2dac9
+2017-12-14 19:37:09 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76c4e5b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:38:25 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:38:26 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:38:26 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:38:26 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:38:26 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:38:27 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:38:27 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:38:27 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:38:27 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:38:27 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:38:27 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:38:28 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:38:28 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@47a2dac9
+2017-12-14 19:38:29 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76c4e5b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:38:34 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:38:34 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:40:23 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:40:23 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:40:23 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:40:23 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:40:24 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:40:24 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:40:24 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:40:24 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:40:24 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:40:24 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:40:25 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:40:25 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:40:25 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@950dd39
+2017-12-14 19:40:26 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e04070f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:40:54 INFO  AuthorizationApp: Rows: 56 - Форма авторизации открыта
+2017-12-14 19:40:54 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 19:40:54 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 19:40:54 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 19:40:55 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 19:40:55 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 19:40:55 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 19:40:55 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 19:40:55 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 19:40:55 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 19:40:55 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 19:40:56 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 19:40:56 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@950dd39
+2017-12-14 19:40:57 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e04070f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 19:47:05 INFO  AuthorizationApp: Rows: 69 - Форма авторизации закрыта
+2017-12-14 19:47:05 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 21:18:19 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 21:18:20 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 21:18:20 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 21:18:20 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 21:18:21 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 21:18:21 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 21:18:21 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 21:18:21 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 21:18:21 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 21:18:21 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 21:18:21 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 21:18:22 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 21:18:22 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5c405678
+2017-12-14 21:18:24 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@395b7714] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 21:23:46 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 21:23:46 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 21:56:39 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 21:56:40 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 21:56:40 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 21:56:40 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 21:56:41 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 21:56:41 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 21:56:41 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 21:56:41 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 21:56:41 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 21:56:41 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 21:56:42 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 21:56:42 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 21:56:42 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4a471296
+2017-12-14 21:56:43 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@455dd0c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 21:57:27 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 21:57:27 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 22:24:32 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 22:24:33 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 22:24:33 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 22:24:33 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 22:24:33 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 22:24:33 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 22:24:33 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 22:24:33 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 22:24:33 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 22:24:33 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 22:24:34 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 22:24:34 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 22:24:34 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@950dd39
+2017-12-14 22:24:36 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e04070f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 22:24:48 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-14 22:24:53 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 22:24:53 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:03:15 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 23:03:16 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 23:03:16 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 23:03:16 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 23:03:17 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 23:03:17 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 23:03:17 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:03:17 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 23:03:17 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 23:03:17 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 23:03:18 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 23:03:18 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 23:03:18 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5c405678
+2017-12-14 23:03:19 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@395b7714] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 23:06:38 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 23:06:38 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:09:08 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 23:09:09 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 23:09:09 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 23:09:09 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 23:09:10 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 23:09:10 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 23:09:10 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:09:10 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 23:09:10 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 23:09:10 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 23:09:10 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 23:09:11 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 23:09:11 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3ab2a3d5
+2017-12-14 23:09:12 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6adfc357] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 23:09:30 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 23:09:30 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:10:36 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 23:10:37 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 23:10:37 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 23:10:37 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 23:10:37 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 23:10:38 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 23:10:38 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:10:38 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 23:10:38 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 23:10:38 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 23:10:38 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 23:10:39 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 23:10:39 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7c228b33
+2017-12-14 23:10:40 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35b334cc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 23:11:11 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-14 23:11:16 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 23:11:16 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:31:30 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-14 23:31:31 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-14 23:31:31 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-14 23:31:31 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-14 23:31:31 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-14 23:31:32 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-14 23:31:32 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-14 23:31:32 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-14 23:31:32 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-14 23:31:32 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-14 23:31:32 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-14 23:31:33 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-14 23:31:33 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4910ebdb
+2017-12-14 23:31:34 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bcb489a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-14 23:31:52 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-14 23:31:59 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-14 23:31:59 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 02:58:10 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 02:58:10 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 02:58:10 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 02:58:10 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 02:58:11 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 02:58:11 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 02:58:11 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 02:58:11 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 02:58:11 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 02:58:11 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 02:58:12 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 02:58:13 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 02:58:13 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5c405678
+2017-12-15 02:58:13 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@395b7714] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 02:58:15 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 02:58:15 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 02:58:20 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 02:58:20 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 02:58:20 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 02:58:20 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 02:58:21 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 02:58:21 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 02:58:21 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 02:58:21 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 02:58:21 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 02:58:21 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 02:58:22 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 02:58:22 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 02:58:22 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3ab2a3d5
+2017-12-15 02:58:24 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6adfc357] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 02:59:11 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 02:59:11 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:43:26 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:43:26 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:43:26 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:43:26 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:43:27 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:43:27 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:43:27 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:43:27 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:43:27 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:43:27 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:43:28 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:43:29 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:43:29 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5c405678
+2017-12-15 09:43:30 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@395b7714] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:44:03 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:44:09 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:44:09 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:45:30 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:45:30 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:45:30 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:45:30 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:45:31 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:45:31 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:45:31 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:45:31 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:45:31 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:45:31 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:45:32 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:45:32 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:45:32 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3ab2a3d5
+2017-12-15 09:45:33 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6adfc357] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:45:55 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:46:05 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:46:05 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:48:21 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:48:22 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:48:22 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:48:22 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:48:23 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:48:23 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:48:23 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:48:23 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:48:23 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:48:23 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:48:24 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:48:24 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:48:24 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4910ebdb
+2017-12-15 09:48:25 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bcb489a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:48:42 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:49:08 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:49:08 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:49:41 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:49:41 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:49:41 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:49:42 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:49:42 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:49:42 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:49:42 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:49:42 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:49:42 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:49:42 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:49:43 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:49:44 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:49:44 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7c228b33
+2017-12-15 09:49:45 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:49:45 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35b334cc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:49:45 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:50:17 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:50:18 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:50:18 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:50:18 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:50:18 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:50:19 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:50:19 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:50:19 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:50:19 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:50:19 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:50:19 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:50:20 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:50:20 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4910ebdb
+2017-12-15 09:50:21 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bcb489a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:50:49 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 09:50:49 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:51:55 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:51:55 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:53:22 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:53:22 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:53:22 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:53:22 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:53:23 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:53:23 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:53:23 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:53:23 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:53:23 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:53:23 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:53:24 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:53:24 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:53:24 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@341b9dc5
+2017-12-15 09:53:25 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b3dc095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:53:26 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:53:26 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:53:52 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:53:53 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:53:53 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:53:53 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:53:53 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:53:54 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:53:54 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:53:54 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:53:54 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:53:54 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:53:54 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:53:54 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:53:54 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3ab2a3d5
+2017-12-15 09:53:56 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6adfc357] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:54:02 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 09:54:04 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 09:54:34 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 09:54:34 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:54:45 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 09:56:37 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 09:56:38 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 09:56:38 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 09:56:38 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 09:56:38 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 09:56:39 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 09:56:39 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 09:56:39 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 09:56:39 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 09:56:39 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 09:56:39 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 09:56:40 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 09:56:40 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@950dd39
+2017-12-15 09:56:41 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e04070f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 09:57:21 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 09:57:21 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 09:57:29 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 10:00:20 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 10:00:20 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 10:00:20 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 10:00:20 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 10:00:20 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 10:00:21 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 10:00:21 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 10:00:21 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 10:00:21 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 10:00:21 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 10:00:21 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 10:00:22 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 10:00:22 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4910ebdb
+2017-12-15 10:00:23 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bcb489a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 10:00:41 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 10:00:41 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 10:00:44 INFO  MainApp: Rows: 37 - Окно закрыто.
+2017-12-15 10:00:47 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта
+2017-12-15 10:12:15 INFO  AuthorizationApp: Rows: 55 - Форма авторизации открыта
+2017-12-15 10:12:16 INFO  Version: Rows: 45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-15 10:12:16 INFO  Environment: Rows: 213 - HHH000206: hibernate.properties not found
+2017-12-15 10:12:16 WARN  deprecation: Rows: 91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-12-15 10:12:16 INFO  Version: Rows: 66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-15 10:12:16 WARN  pooling: Rows: 70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-15 10:12:16 INFO  pooling: Rows: 126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 10:12:16 INFO  pooling: Rows: 135 - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-12-15 10:12:16 INFO  pooling: Rows: 140 - HHH10001003: Autocommit mode: false
+2017-12-15 10:12:16 INFO  DriverManagerConnectionProviderImpl: Rows: 41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-15 10:12:17 INFO  Dialect: Rows: 157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2017-12-15 10:12:17 INFO  LobCreatorBuilderImpl: Rows: 124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-12-15 10:12:17 INFO  BasicTypeRegistry: Rows: 148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5c405678
+2017-12-15 10:12:18 INFO  access: Rows: 47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@395b7714] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-12-15 10:12:39 INFO  ControllerAuth: Rows: 43 - Нажата кнопка войти.
+2017-12-15 10:12:40 INFO  QueryTranslatorFactoryInitiator: Rows: 47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-15 10:12:56 INFO  pooling: Rows: 230 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/TestCompany]
+2017-12-15 10:12:59 INFO  AuthorizationApp: Rows: 68 - Форма авторизации закрыта

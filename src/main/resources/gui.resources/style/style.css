@@ -1,10 +1,35 @@
-/*init style */
+/*init style authorization */
+
+.button_auth {
+    -fx-background-color: indigo;
+}
+
+.button_auth:hover {
+    -fx-background-color: darkslategrey;
+}
+
 .panel_auth{
     -fx-background-color: indigo;
 }
+
 .panel_back_end{
     -fx-background-color: transparent;
 }
+
 .panel_front{
-    -fx-background-color: white;
+    -fx-background-color: darkslateblue;
+}
+
+.auth_text-field {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+/*style main menu*/
+
+.menu_button:hover{
+    -fx-background-color: darkslateblue;
+}
+.menu_footer{
+    -fx-background-color: darkslateblue;
 }

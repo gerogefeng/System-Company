@@ -1,19 +1,21 @@
-package gui;
+package by.psu.gui;
 
+import by.psu.logical.unit.SessionHibernate;
 import javafx.application.Application;
-import javafx.event.EventHandler;
+
+import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.apache.log4j.Logger;
 
-public class Main extends Application{
+public class AuthorizationApp extends Application{
 
-    private double xOffSet = 0.0;
-    private double yOffSet = 0.0;
+    private static Stage stage = null;
+    private static final Logger LOG = Logger.getLogger(AuthorizationApp.class);
 
     /**
      * The main entry point for all JavaFX applications.
@@ -31,25 +33,40 @@ public class Main extends Application{
      *                     primary stages and will not be embedded in the browser.
      * @throws Exception if something goes wrong
      */
+
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/gui.resources/authorization.fxml"));
         primaryStage.initStyle(StageStyle.TRANSPARENT);
 
-        root.setOnMousePressed((event)->{
-            xOffSet = event.getSceneX();
-            yOffSet = event.getSceneY();
-        });
-
-        root.setOnMouseDragged(event -> {
-            primaryStage.setX(event.getSceneX() - xOffSet);
-            primaryStage.setY(event.getSceneY() - yOffSet);
-        });
-
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
+        stage = primaryStage;
 
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    public static Stage getStage() {
+        return stage;
+    }
+
+    @Override
+    public void init() throws Exception {
+        LOG.info("Форма авторизации открыта");
+        Task<Void> task = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                SessionHibernate.getInstance();
+                return null;
+            }
+        };
+        new Thread(task).start();
+    }
+
+    @Override
+    public void stop() throws Exception {
+        LOG.info("Форма авторизации закрыта");
+
     }
 
     public static void main(String[] args) {

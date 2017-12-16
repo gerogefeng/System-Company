@@ -34,6 +34,19 @@
             <artifactId>jfoenix</artifactId>
             <version>1.8.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx -->
+        <dependency>
+            <groupId>de.jensd</groupId>
+            <artifactId>fontawesomefx</artifactId>
+            <version>8.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.guigarage/material-design-fx -->
+        <dependency>
+            <groupId>com.guigarage</groupId>
+            <artifactId>material-design-fx</artifactId>
+            <version>0.7</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.postgresql</groupId>
