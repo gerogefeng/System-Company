@@ -1,15 +1,40 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hbm2ddl.auto">update</property>
-        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/TestCompany</property>
-        <property name="connection.username">postgres</property>
-        <property name="connection.password">Raidmax123</property>
-        <property name="connection.driver_class">org.postgresql.Driver</property>
+
+        <property name = "hibernate.dialect">
+            org.hibernate.dialect.PostgreSQL9Dialect
+        </property>
+
+        <property name = "hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+        <!-- Assume test is the database name -->
+
+        <property name = "hibernate.connection.url">
+            jdbc:postgresql://localhost:5432/TestCompany
+        </property>
+
+        <property name = "hibernate.connection.username">
+            postgres
+        </property>
+
+        <property name = "hibernate.connection.password">
+            Raidmax123
+        </property>
+
+        <!-- List of XML mapping files -->
+        <mapping class="by.psu.logical.model.DriverLicence"/>
+        <mapping class="by.psu.logical.model.Post"/>
+        <mapping class="by.psu.logical.model.Category"/>
+        <mapping class="by.psu.logical.model.PrivateCard"/>
         <mapping class="by.psu.logical.model.User"/>
         <mapping class="by.psu.logical.model.Role"/>
+        <mapping class="by.psu.logical.model.Employee"/>
+        <mapping class="by.psu.logical.model.Passport"/>
+
     </session-factory>
 </hibernate-configuration>

@@ -3,7 +3,6 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDialog?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -30,7 +29,7 @@
             </AnchorPane>
             <HBox prefHeight="50.0" AnchorPane.leftAnchor="140.0">
                <children>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionEmployees" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
                      </graphic>
@@ -40,47 +39,32 @@
                         <MaterialDesignIconView fill="WHITE" glyphName="CALENDAR" size="20" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
-                     <graphic>
-                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
-                     <graphic>
-                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
-                     </graphic>
-                  </JFXButton>
                </children>
             </HBox>
-            <AnchorPane layoutX="-24.0" layoutY="299.0" prefHeight="20.0" prefWidth="752.0" style="-fx-background-color: indigo;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <AnchorPane layoutX="-24.0" layoutY="299.0" prefHeight="20.0" prefWidth="750.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
-                  <HBox alignment="CENTER" layoutX="638.0" layoutY="-7.0" prefHeight="32.0" prefWidth="114.0" spacing="5.0" style="-fx-background-color: indigo;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <HBox alignment="CENTER" layoutX="688.0" prefHeight="20.0" prefWidth="60.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="2.0">
                      <children>
-                        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="20.0" prefWidth="24.0" styleClass="menu_footer" stylesheets="@style/style.css">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#consumeStage">
                            <graphic>
-                              <MaterialDesignIconView fill="WHITE" glyphName="VECTOR_DIFFERENCE_AB" />
-                           </graphic>
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="20.0" prefWidth="24.0" styleClass="menu_footer" stylesheets="@style/style.css">
-                           <graphic>
-                              <MaterialDesignIconView fill="WHITE" glyphName="FULLSCREEN" />
+                              <MaterialDesignIconView fx:id="minimize" glyphName="VECTOR_DIFFERENCE_AB" size="15" />
                            </graphic>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="20.0" prefWidth="20.0" styleClass="menu_footer" stylesheets="@style/style.css">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#actionFullScreen" text="Button">
                            <graphic>
-                              <MaterialDesignIconView fill="WHITE" glyphName="CLOSE" />
+                              <MaterialDesignIconView fx:id="fullScreen" glyphName="FULLSCREEN" size="15" />
                            </graphic>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#actionCloseWindow" text="Button">
+                           <graphic>
+                              <MaterialDesignIconView fx:id="close" glyphName="CLOSE" size="15" />
+                           </graphic>
                         </JFXButton>
                      </children>
                   </HBox>
                </children>
             </AnchorPane>
+            <AnchorPane fx:id="workSpace" layoutY="55.0" prefHeight="402.0" prefWidth="750.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
          </children>
       </AnchorPane>
       <JFXDialog fx:id="dialog" />

@@ -1,16 +1,15 @@
-package by.psu.gui;
+package by.psu.gui.logicalGui;
 
-import by.psu.logical.unit.SessionHibernate;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import org.apache.log4j.Logger;
 
-public class MainApp extends Application{
+import java.io.IOException;
 
-    private static final Logger LOG = Logger.getLogger(MainApp.class);
+public abstract class AbstractFrame extends Application implements ApplicationFX {
+
+    protected static final Logger LOG = Logger.getLogger(AbstractFrame.class);
 
     /**
      * The main entry point for all JavaFX applications.
@@ -29,26 +28,11 @@ public class MainApp extends Application{
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/gui.resources/mainframe.fxml"));
-        primaryStage.setScene(new Scene(fxmlLoader.load(), 950, 600));
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
-        primaryStage.setOnCloseRequest((e)-> SessionHibernate.getInstance().closeFactory());
-        primaryStage.show();
+        FXMLLoader fxmlLoader = getFXMLLoader();
+        settingStage(fxmlLoader, primaryStage);
     }
 
+    public abstract FXMLLoader getFXMLLoader();
 
-    @Override
-    public void init() throws Exception {
-        LOG.info("Открыто главное окно.");
-    }
-
-    @Override
-    public void stop() throws Exception {
-        LOG.info("Закрыто главное окно.");
-        SessionHibernate.getInstance().closeFactory();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public abstract void settingStage(FXMLLoader fxmlLoader, Stage stage) throws IOException;
 }

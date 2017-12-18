@@ -10,21 +10,27 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="457.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="457.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
    <children>
-      <AnchorPane layoutY="60.0" prefHeight="340.0" prefWidth="455.0" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
-         <effect>
-            <DropShadow />
-         </effect>
+      <AnchorPane layoutX="-6.0" layoutY="68.0" prefHeight="325.0" prefWidth="455.0" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="68.0">
          <children>
-            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="400.0" layoutY="6.0" onAction="#actionClose" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@style/style.css" textFill="WHITE">
-               <graphic>
-                  <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="20" />
-               </graphic>
-            </JFXButton>
+            <VBox alignment="CENTER" layoutX="401.0" layoutY="2.0" prefHeight="127.0" prefWidth="45.0" spacing="20.0">
+               <children>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionClose" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@style/style.css" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionCostume" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@style/style.css" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="VECTOR_DIFFERENCE_AB" size="20" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
          </children></AnchorPane>
       <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="712.0" layoutY="12.0" prefHeight="31.0" prefWidth="35.0" text="Закрыть" textFill="WHITE" />
-      <AnchorPane focusTraversable="true" layoutX="14.0" prefHeight="420.0" prefWidth="370.0" styleClass="panel_auth" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane focusTraversable="true" layoutX="8.0" layoutY="28.0" prefHeight="434.0" prefWidth="370.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" styleClass="panel_auth" stylesheets="@style/style.css" AnchorPane.bottomAnchor="38.0" AnchorPane.topAnchor="28.0">
          <children>
             <VBox alignment="CENTER" layoutX="54.0" layoutY="25.0" spacing="80.0">
                <children>
@@ -47,7 +53,7 @@
                   </VBox>
                   <HBox alignment="CENTER" spacing="15.0">
                      <children>
-                        <JFXCheckBox checkedColor="#00a151" prefHeight="18.0" prefWidth="103.0" text="Запомнить?" textFill="WHITE" unCheckedColor="WHITE" />
+                        <JFXCheckBox fx:id="checkMember" checkedColor="#00a151" prefHeight="18.0" prefWidth="103.0" text="Запомнить?" textFill="WHITE" unCheckedColor="WHITE" />
                         <JFXButton buttonType="RAISED" onAction="#signIn" prefHeight="25.0" prefWidth="139.0" styleClass="button_auth" stylesheets="@style/style.css" text="Войти" textFill="WHITE" />
                      </children>
                   </HBox>
@@ -55,7 +61,7 @@
             </VBox>
          </children>
          <effect>
-            <DropShadow height="158.88" radius="50.4" width="44.72" />
+            <DropShadow height="180.87" offsetY="10.0" radius="50.6475" width="23.72" />
          </effect>
       </AnchorPane>
    </children>

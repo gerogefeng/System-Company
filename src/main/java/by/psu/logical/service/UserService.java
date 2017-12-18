@@ -16,12 +16,12 @@ public class UserService extends AbstractService<User> implements IUser {
 
     @Override
     public boolean exists(String login, String password) {
-        Session session = SessionHibernate.getInstance().getSession();
+        Session session = SessionHibernate.getInstance().retriver();
         Query query = session.createQuery("from User u WHERE u.login = :login AND u.password = crypt(:pass, u.password)");
         query.setParameter("login", login);
         query.setParameter("pass", password);
         boolean res = !query.getResultList().isEmpty();
-        session.close();
+        SessionHibernate.getInstance().putback(session);
         return res;
     }
 }

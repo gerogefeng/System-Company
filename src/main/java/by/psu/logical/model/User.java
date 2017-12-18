@@ -17,6 +17,9 @@ public class User {
     @Column(name = "pass")
     private String password;
 
+    @OneToOne
+    private Employee employee;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_role")
     private Role role;

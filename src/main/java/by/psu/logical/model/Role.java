@@ -15,7 +15,10 @@ public class Role {
     @Column(name = "title")
     private String title;
 
-
+    
+    public Role(String title) {
+        this.title = title;
+    }
 
     public Role() { }
 

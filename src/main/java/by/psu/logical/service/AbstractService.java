@@ -25,31 +25,33 @@ public abstract class AbstractService<T> implements ICRUD<T> {
 
     @Override
     public T read(int id) {
-        Session session = SessionHibernate.getInstance().getSession();
+        Session session = SessionHibernate.getInstance().retriver();
         T object = session.get(type, id);
-        session.close();
+        SessionHibernate.getInstance().putback(session);
         return object;
     }
 
     @Override
     public void update(T object) {
-        Session session = SessionHibernate.getInstance().getSession();
+        Session session = SessionHibernate.getInstance().retriver();
         session.update(object);
-        session.close();
+        SessionHibernate.getInstance().putback(session);
     }
 
     @Override
     public void delete(T object) {
-        Session session = SessionHibernate.getInstance().getSession();
+        Session session = SessionHibernate.getInstance().retriver();
+        session.getTransaction().begin();
         session.delete(object);
-        session.close();
+        session.getTransaction().commit();
+        SessionHibernate.getInstance().putback(session);
     }
 
     @Override
     public List<T> readALL() {
-        Session session = SessionHibernate.getInstance().getSession();
+        Session session = SessionHibernate.getInstance().retriver();
         List list  = session.createQuery("from "+ type.getSimpleName()).list();
-        session.close();
+        SessionHibernate.getInstance().putback(session);
         return list;
     }
 }

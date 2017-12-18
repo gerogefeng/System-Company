@@ -33,3 +33,24 @@
 .menu_footer{
     -fx-background-color: darkslateblue;
 }
+
+.item_employee_item_button{
+    -fx-background-color: indigo;
+    -fx-text-fill: white;
+}
+
+/* scroll department Employee*/
+
+.scroll-pane > .viewport {
+    -fx-background-color: white;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/*panel item */
+
+.panel-item-employee{
+    -fx-background-color: darkslateblue;
+}
