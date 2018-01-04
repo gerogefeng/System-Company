@@ -35,10 +35,11 @@
 }
 
 .item_employee_item_button{
-    -fx-background-color: indigo;
-    -fx-text-fill: white;
+    -fx-background-color: white;
 }
-
+.item_employee_item_button:hover{
+    -fx-background-color: seashell;
+}
 /* scroll department Employee*/
 
 .scroll-pane > .viewport {
@@ -52,5 +53,30 @@
 /*panel item */
 
 .panel-item-employee{
-    -fx-background-color: darkslateblue;
+    -fx-background-color: white;
+}
+
+.panel-item-employee:hover{
+    -fx-background-color: snow;
+}
+
+.button_close_item:hover{
+    -fx-background-color: red;
+}
+
+.jfx-snackbar{
+    -fx-alignment: center;
+}
+
+.jfx-snackbar-content{
+    -fx-background-color: indigo;
+}
+
+.jfx-snackbar-toast {
+    -fx-text-fill: WHITE;
+}
+
+.jfx-snackbar-action {
+    -fx-background-color: white;
+    -fx-text-fill: indigo;
 }

@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="457.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="453.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
    <children>
-      <AnchorPane layoutX="-6.0" layoutY="68.0" prefHeight="325.0" prefWidth="455.0" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="68.0">
+      <AnchorPane layoutY="87.0" prefHeight="325.0" prefWidth="453.0" style="-fx-border-radius: 50;" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="87.0">
          <children>
-            <VBox alignment="CENTER" layoutX="401.0" layoutY="2.0" prefHeight="127.0" prefWidth="45.0" spacing="20.0">
+            <VBox alignment="CENTER" layoutX="399.0" prefHeight="127.0" prefWidth="45.0" spacing="20.0">
                <children>
                   <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionClose" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@style/style.css" textFill="WHITE">
                      <graphic>
@@ -30,7 +30,7 @@
             </VBox>
          </children></AnchorPane>
       <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="712.0" layoutY="12.0" prefHeight="31.0" prefWidth="35.0" text="Закрыть" textFill="WHITE" />
-      <AnchorPane focusTraversable="true" layoutX="8.0" layoutY="28.0" prefHeight="434.0" prefWidth="370.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" styleClass="panel_auth" stylesheets="@style/style.css" AnchorPane.bottomAnchor="38.0" AnchorPane.topAnchor="28.0">
+      <AnchorPane focusTraversable="true" layoutX="18.0" layoutY="33.0" prefHeight="434.0" prefWidth="370.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" styleClass="panel_auth" stylesheets="@style/style.css" AnchorPane.bottomAnchor="33.0" AnchorPane.topAnchor="33.0">
          <children>
             <VBox alignment="CENTER" layoutX="54.0" layoutY="25.0" spacing="80.0">
                <children>

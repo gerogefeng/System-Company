@@ -1,39 +1,62 @@
 package Test;
 
-import by.psu.logical.model.*;
-import by.psu.logical.service.*;
+
+import by.psu.logical.model.employee.Employee;
+import by.psu.logical.model.employee.Passport;
+import by.psu.logical.service.employee_services.EmployeeService;
+import by.psu.logical.service.employee_services.PassportService;
+import by.psu.logical.service.transport_services.TransportService;
+
+import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {/*
+    public static void main(String[] args) throws Exception {
+        PassportService passportService = new PassportService();
         EmployeeService employeeService = new EmployeeService();
-        Employee e = employeeService.read(1);
-        System.out.println(e.getPassports());*/
-        /*UserService userService = new UserService();
-        System.out.println(userService.read(1).getLogin());*/
 
-        /*PassportService passportService = new PassportService();
-        Passport p = passportService.read(1);
-        System.out.println(p.getEmployee().getUser().getRole().getTitle());*/
+        /*Passport passport = new Passport("Belarus", "OVDE", "MC", "112215515", new Date(), new Date());
+        Card card = new Card(new Date(), "+375299479630", "jsdevelop..@ya.com");
+        Employee employee = new Employee("Pavel", "Talaiko", "Dmitrievich", null, passport, null, card);
+        card.setEmployee(employee);
+        passport.setEmployee(employee);
+        employeeService.create(employee);*/
+        /*Passport passport = new Passport();
+        passport.setNationality("fasdafsafdas");
+        passport.setDepartment("fdsfsfasd");
+        passport.setSerialPassport("MC");
+        passport.setNumberPassport("43214231");
+        passport.setDateIn(new Date());
+        passport.setDateOut(new Date());
 
-        /*RoleService roleService = new RoleService();
-        System.out.println(roleService.readALL().get(0).getTitle());*/
+        Passport passport2 = new Passport();
+        passport2.setNationality("fasdafsafewfffffffffdas");
+        passport2.setDepartment("ffffffffffff");
+        passport2.setSerialPassport("MC");
+        passport2.setNumberPassport("54354htrh3");
+        passport2.setDateIn(new Date());
+        passport2.setDateOut(new Date());
 
-        /*PrivateCardService pcs = new PrivateCardService();
-        System.out.println(pcs.read(1).getEmployee().getUser().getRole().getTitle());*/
+        Employee employee = new Employee("fsdafsdaf", "fdsafadsfds", "ffdsafdsafsa", "jhjkhjgjh", null);
 
-        /*CategoryService categoryService = new CategoryService();
-        Category category = categoryService.read(1);
-        System.out.println(category.getDriverLicences().get(0).getEmployee().getUser().getRole().getTitle());*/
+        employeeService.create(employee);
 
-        PostService postService = new PostService();
-        //postService.create(new Post("Kingman"));
+        passport.setEmployee(employee);
+        passport2.setEmployee(employee);
 
-        //postService.delete(postService.read(1));
+        passportService.create(passport);
+        passportService.create(passport2);*/
 
-        /*DriverLicenceService dls = new DriverLicenceService();
-        dls.readALL().get(0).getCategories().forEach(category -> {
-            System.out.println(category.getCategory());
-        });*/
+        TransportService transportService = new TransportService();
+
+        transportService.readALL().forEach(System.out::println);
+
+        /*Employee employee = employeeService.read(3);
+        employeeService.update(employee);
+        passportService.delete(employee.getPassport().get(0));
+*/
+        /*Passport passport = passportService.read(1);
+        passport.setEmployee(employeeService.read(1));
+        passportService.update(passport);*/
 
     }
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_employee.item_employee.ControllerPassportItem">
+   <children>
+      <Pane layoutX="21.0" layoutY="16.0" prefHeight="109.0" prefWidth="647.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+         <effect>
+            <DropShadow color="#009688" height="29.73" offsetY="1.0" radius="18.0875" spread="0.05" width="44.62" />
+         </effect>
+         <children>
+            <Label alignment="TOP_RIGHT" layoutX="488.0" layoutY="5.0" prefHeight="18.0" prefWidth="144.0" text="Паспортные данные" textFill="#bcb7b7">
+               <graphic>
+                  <MaterialDesignIconView fill="DODGERBLUE" glyphName="FILE_POWERPOINT_BOX" size="18" />
+               </graphic>
+            </Label>
+            <HBox layoutX="11.0" layoutY="11.0" spacing="25.0">
+               <children>
+                  <JFXTextField fx:id="nationalityTextField" prefHeight="25.0" prefWidth="164.0" promptText="Гражданство" />
+                  <JFXTextField fx:id="authorityTextField" prefHeight="25.0" prefWidth="245.0" promptText="Кем выдан" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="53.0" prefHeight="25.0" prefWidth="618.0" spacing="25.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="166.0" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="serialTextField" prefHeight="25.0" prefWidth="52.0" promptText="Серия" />
+                        <JFXTextField fx:id="numberTextField" prefHeight="25.0" prefWidth="129.0" promptText="Номер" />
+                     </children>
+                  </HBox>
+                  <JFXDatePicker fx:id="dateInDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="200.0" promptText="Дата выдочи" />
+                  <JFXDatePicker fx:id="dateOutDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="200.0" promptText="Срок действия" />
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="618.0" layoutY="83.0" onAction="#close" prefHeight="25.0" prefWidth="28.0" styleClass="button_close_item" stylesheets="@../../style/style.css">
+               <graphic>
+                  <MaterialDesignIconView fill="#e8e8e8" glyphName="CLOSE" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,15 +1,13 @@
 package by.psu.gui.controllers;
 
 import by.psu.Config;
-import by.psu.gui.logicalGui.ApplicationFX;
-import by.psu.gui.logicalGui.ControllerClass;
-import by.psu.gui.frames.MainApp;
-import by.psu.logical.service.UserService;
+import by.psu.gui.frames.Frame;
+import by.psu.gui.frames.FrameWork;
+import by.psu.logical.service.employee_services.UserService;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import org.apache.log4j.Logger;
@@ -17,7 +15,7 @@ import org.apache.log4j.Logger;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ControllerAuth implements Initializable, ControllerClass {
+public class ControllerAuth implements Initializable{
 
     @FXML private JFXTextField login;
     @FXML private JFXPasswordField password;
@@ -28,7 +26,6 @@ public class ControllerAuth implements Initializable, ControllerClass {
 
     private static final Logger LOG = Logger.getLogger(ControllerAuth.class);
 
-    private static ApplicationFX form = null;
 
     /**
      * Called to initialize a controller after its root element has been
@@ -57,49 +54,21 @@ public class ControllerAuth implements Initializable, ControllerClass {
         }
         LOG.info("Нажата кнопка войти.");
         if(!login.getText().isEmpty() && !password.getText().isEmpty()) {
-            Task<Void> task = new Task<Void>() {
-                @Override
-                protected Void call() throws Exception {
-                    if (userService.exists(login.getText(), password.getText())) {
-                        Platform.runLater(()->{
-                            try {
-                                new MainApp();
-                                form.getStage().close();
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        });
-                    }
-                    return null;
+            new Thread(()->{
+                if (userService.exists(login.getText(), password.getText())) {
+                    new FrameWork();
+                    Platform.runLater(this::actionClose);
                 }
-            };
-            new Thread(task).start();
-
-
+            }).start();
         }
     }
 
     @FXML private void actionClose(){
-        form.getStage().close();
+        Frame.getGlobalStage().close();
     }
 
     @FXML private void actionCostume(){
-        form.getStage().setIconified(true);
-    }
-
-    @Override
-    public Object getData() {
-        return null;
-    }
-
-    @Override
-    public void setData(Object... objects) {
-
-    }
-
-    @Override
-    public void setParent(ApplicationFX applicationFX) {
-        form = applicationFX;
+        Frame.getGlobalStage().setIconified(true);
     }
 
 }

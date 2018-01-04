@@ -4,7 +4,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="META-INF:hibernate.cfg.xml" value="9218a771-99d4-4941-b369-56f046ee27ff" />
+          <unit-entry name="META-INF:hibernate.cfg.xml" value="0ddc99fd-af82-4058-b939-917ddc1832d1" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" />
@@ -29,6 +29,7 @@
     <orderEntry type="library" name="Maven: com.guigarage:ui-basics:0.7" level="project" />
     <orderEntry type="library" name="Maven: org.reactfx:reactfx:1.4" level="project" />
     <orderEntry type="library" name="Maven: com.guigarage:css-helper:0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:8.40.11" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4-1206-jdbc42" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.2.11.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />

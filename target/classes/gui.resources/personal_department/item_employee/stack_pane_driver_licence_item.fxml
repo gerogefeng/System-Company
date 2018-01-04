@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="182.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_employee.item_employee.ControllerDriverLicenceItem">
+   <children>
+      <Pane layoutX="21.0" layoutY="16.0" prefHeight="142.0" prefWidth="648.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+         <effect>
+            <DropShadow color="#009688" height="29.73" offsetY="1.0" radius="18.0875" spread="0.05" width="44.62" />
+         </effect>
+         <children>
+            <Label alignment="TOP_RIGHT" layoutX="435.0" layoutY="5.0" prefHeight="18.0" prefWidth="193.0" text="Водительское удостовирение" textFill="#bcb7b7">
+               <graphic>
+                  <MaterialDesignIconView fill="DODGERBLUE" glyphName="TICKET_ACCOUNT" size="18" />
+               </graphic>
+            </Label>
+            <HBox layoutX="11.0" layoutY="11.0" spacing="25.0">
+               <children>
+                  <JFXTextField fx:id="authorityTextField" prefHeight="25.0" prefWidth="347.0" promptText="Кем выдано" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="11.0" layoutY="53.0" spacing="25.0">
+               <children>
+                  <JFXTextField fx:id="numberTextField" prefHeight="25.0" prefWidth="190.0" promptText="Номер" />
+                  <JFXDatePicker fx:id="dateInDatePicker" prefHeight="25.0" prefWidth="190.0" promptText="Дата выдочи" />
+                  <JFXDatePicker fx:id="dateOutDatePicker" prefHeight="25.0" prefWidth="190.0" promptText="Срок действия" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="95.0" prefHeight="33.0" prefWidth="546.0" spacing="10.0">
+               <children>
+                  <JFXCheckBox fx:id="amCheckBox" text="AM" />
+                  <JFXCheckBox fx:id="a1CheckBox" text="A1" />
+                  <JFXCheckBox fx:id="aCheckBox" text="A" />
+                  <JFXCheckBox fx:id="cCheckBox" text="C" />
+                  <JFXCheckBox fx:id="bCheckBox" text="B" />
+                  <JFXCheckBox fx:id="dCheckBox" text="D" />
+                  <JFXCheckBox fx:id="beCheckBox" text="BE" />
+                  <JFXCheckBox fx:id="ceCheckBox" text="CE" />
+                  <JFXCheckBox fx:id="deCheckBox" text="DE" />
+                  <JFXCheckBox fx:id="iCheckBox" text="I" />
+                  <JFXCheckBox fx:id="fCheckBox" text="F" />
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="619.0" layoutY="116.0" onAction="#close" prefHeight="25.0" prefWidth="28.0" styleClass="button_close_item" stylesheets="@../../style/style.css">
+               <graphic>
+                  <MaterialDesignIconView fill="#e8e8e8" glyphName="CLOSE" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

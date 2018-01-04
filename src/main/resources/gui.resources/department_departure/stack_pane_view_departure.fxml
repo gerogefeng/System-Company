@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="TOP_CENTER" prefHeight="645.0" prefWidth="702.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_departure.CViewDeparture">
+   <children>
+      <ScrollPane cache="true" fitToWidth="true" hbarPolicy="NEVER" hvalue="1.0" prefHeight="645.0" prefWidth="683.0" stylesheets="@../style/style.css" vbarPolicy="NEVER" vvalue="0.3">
+         <content>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="643.0" prefWidth="739.0" spacing="10.0">
+               <children>
+                  <VBox fx:id="vBoxItems" prefHeight="526.0" prefWidth="597.0" spacing="50.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="597.0" spacing="40.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefWidth="558.0" spacing="25.0">
+                                 <children>
+                                    <JFXTextField fx:id="searchTextField" alignment="CENTER" prefHeight="25.0" prefWidth="475.0" promptText="Поиск" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox fx:id="vBoxItem" alignment="TOP_CENTER" prefHeight="227.0" prefWidth="597.0" spacing="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

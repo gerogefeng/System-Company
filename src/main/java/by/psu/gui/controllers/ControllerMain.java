@@ -1,8 +1,10 @@
 package by.psu.gui.controllers;
 
-import by.psu.gui.logicalGui.ApplicationFX;
-import by.psu.gui.logicalGui.ControllerClass;
-import by.psu.gui.logicalGui.LoaderGUI;
+import by.psu.gui.LoaderFXML;
+import by.psu.gui.frames.Frame;
+import by.psu.gui.frames.FrameWork;
+import by.psu.gui.logicalGui.ControllerFX;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
@@ -11,10 +13,10 @@ import org.apache.log4j.Logger;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ControllerMain implements Initializable, ControllerClass {
+public class ControllerMain implements Initializable, ControllerFX {
 
-    private ApplicationFX applicationFX = null;
     private boolean winFullScreen = false;
+
     private static final Logger LOG = Logger.getLogger(ControllerMain.class);
 
     @FXML private AnchorPane workSpace;
@@ -33,39 +35,61 @@ public class ControllerMain implements Initializable, ControllerClass {
     }
 
     @FXML private void actionEmployees(){
-        workSpace.getChildren().clear();
-        LoaderGUI.installScene(workSpace, "/gui.resources/personal_department/anchorPaneMain.fxml", this);
+        LoaderFXML.loaderController(
+                "/gui.resources/personal_department/anchorPaneMain.fxml",
+                workSpace,
+                this
+        );
     }
 
     @FXML private void actionCloseWindow(){
         LOG.info("actionCloseWindow");
-        applicationFX.getStage().close();
+        FrameWork.getGlobalStage().close();
     }
 
     @FXML public void actionFullScreen(){
-        if(winFullScreen)
-            applicationFX.getStage().setFullScreen(false);
-        else
-            applicationFX.getStage().setFullScreen(true);
+        FrameWork.getGlobalStage().setFullScreen(!(winFullScreen));
         winFullScreen = !winFullScreen;
         LOG.info("actionFullScreen");
     }
 
     @FXML private void consumeStage(){
         LOG.info("consumeStage");
-        applicationFX.getStage().setIconified(true);
+        FrameWork.getGlobalStage().setIconified(true);
+    }
+
+    @FXML private void actionDepartmentCar() {
+        LoaderFXML.loaderController(
+                "/gui.resources/transport/stack_pane_main_scene.fxml",
+                workSpace,
+                this
+        );
+    }
+    @FXML private void actionDepartmentOrder() {
+        LoaderFXML.loaderController(
+                "/gui.resources/department_order/stack_pane_main_scene.fxml",
+                workSpace,
+                this
+        );
+    }
+    @FXML private void actionDepartmentInstrument() {
+        LoaderFXML.loaderController(
+                "/gui.resources/department_instruments/stack_pane_main_instrument.fxml",
+                workSpace,
+                this
+        );
+    }
+
+    @FXML private void actionDepartmentDeparture() {
+        LoaderFXML.loaderController(
+                "/gui.resources/department_departure/stack_pane_main_departure.fxml",
+                workSpace,
+                this
+        );
     }
 
     @Override
-    public Object getData() {
-        return null;
-    }
+    public void setParentController(ControllerFX controller) {
 
-    @Override
-    public void setData(Object... objects) {}
-
-    @Override
-    public void setParent(ApplicationFX applicationFX) {
-        this.applicationFX = applicationFX;
     }
 }

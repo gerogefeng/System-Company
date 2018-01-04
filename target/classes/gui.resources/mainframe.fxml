@@ -4,12 +4,15 @@
 <?import com.jfoenix.controls.JFXDialog?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerMain">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="750.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerMain">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -27,14 +30,29 @@
                   </JFXButton>
                </children>
             </AnchorPane>
-            <HBox prefHeight="50.0" AnchorPane.leftAnchor="140.0">
+            <HBox prefHeight="55.0" AnchorPane.leftAnchor="140.0">
                <children>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionEmployees" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionEmployees" prefHeight="115.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css" text="Button">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="50.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css">
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionDepartmentCar" prefHeight="66.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="CAR" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="order" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionDepartmentOrder" prefHeight="66.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="CITY" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="order1" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionDepartmentInstrument" prefHeight="66.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="PACKAGE_VARIANT" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionDepartmentDeparture" prefHeight="66.0" prefWidth="60.0" styleClass="menu_button" stylesheets="@style/style.css">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="CALENDAR" size="20" />
                      </graphic>
@@ -64,7 +82,18 @@
                   </HBox>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="workSpace" layoutY="55.0" prefHeight="402.0" prefWidth="750.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+            <AnchorPane fx:id="workSpace" layoutY="55.0" prefHeight="402.0" prefWidth="750.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="282.0" layoutY="102.0" prefHeight="200.0" prefWidth="186.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="102.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icon-pack-04.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
          </children>
       </AnchorPane>
       <JFXDialog fx:id="dialog" />

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" minHeight="118.0" prefHeight="118.0" prefWidth="560.0" styleClass="panel-item-employee" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_transport.CCarItem">
+   <children>
+      <Circle fx:id="avatar" fill="DODGERBLUE" layoutX="56.0" layoutY="59.0" radius="42.0" stroke="WHITE" strokeType="INSIDE" />
+      <VBox layoutX="113.0" layoutY="24.0" prefHeight="70.0" prefWidth="310.0" spacing="5.0">
+         <children>
+            <Label fx:id="fullName" prefHeight="20.0" prefWidth="284.0" style="-fx-text-fill: #1e90ff;" text="Mersedes Benz C56" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="capacity" prefHeight="20.0" prefWidth="143.0" text="Грузоподъёмность:" textFill="#808080">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="valueWeight" prefHeight="20.0" prefWidth="143.0" style="-fx-text-fill: green;" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="260.0">
+               <children>
+                  <Label fx:id="fullName12" prefHeight="20.0" prefWidth="162.0" text="Состаяние транспорта:" textFill="#808080">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="statusCar" prefHeight="17.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="418.0" layoutY="40.0" prefHeight="39.0" prefWidth="128.0" spacing="20.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <JFXButton fx:id="edit" contentDisplay="GRAPHIC_ONLY" onAction="#actionEdit" prefHeight="50.0" prefWidth="40.0" styleClass="item_employee_item_button" stylesheets="@../style/style.css">
+               <graphic>
+                  <MaterialDesignIconView fill="DODGERBLUE" glyphName="TOOLTIP_EDIT" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="delete" contentDisplay="GRAPHIC_ONLY" onAction="#actionDelete" prefHeight="50.0" prefWidth="40.0" styleClass="item_employee_item_button" stylesheets="@../style/style.css">
+               <graphic>
+                  <MaterialDesignIconView fill="DODGERBLUE" glyphName="DELETE" size="20" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <DropShadow height="2.97" radius="0.24250000000000005" width="0.0" />
+   </effect>
+</AnchorPane>

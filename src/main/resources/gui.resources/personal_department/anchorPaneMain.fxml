@@ -1,217 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXCheckBox?>
-<?import com.jfoenix.controls.JFXDatePicker?>
-<?import com.jfoenix.controls.JFXDialog?>
-<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Circle?>
 
-<AnchorPane prefHeight="681.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.departmentEmployee.ControllerDeparOder">
+<AnchorPane prefHeight="681.0" prefWidth="736.0" style="-fx-background-color: white;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_employee.ControllerDeparOder">
    <children>
-      <AnchorPane fx:id="anchorPaneAllEmployee" prefHeight="400.0" prefWidth="628.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="workspace" prefHeight="400.0" prefWidth="628.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="739.0" layoutY="-2.0" prefHeight="311.0" prefWidth="60.0" style="-fx-background-color: #f0f2f5;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="400.0" prefWidth="628.0" stylesheets="@../style/style.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <content>
-                  <VBox fx:id="vBox" alignment="TOP_CENTER" prefHeight="398.0" prefWidth="435.0" spacing="10.0">
-                     <padding>
-                        <Insets top="20.0" />
-                     </padding>
-                  </VBox>
-               </content>
-            </ScrollPane>
+            <VBox spacing="9.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <JFXButton fx:id="menu1" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionAddEmployee" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE_PLUS" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <Separator prefHeight="0.0" prefWidth="0.0" />
+                  <JFXButton fx:id="menu3" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionGetAllEmployee" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <Separator prefHeight="0.0" prefWidth="0.0" />
+               </children>
+            </VBox>
          </children>
       </AnchorPane>
-      <VBox layoutX="636.0" layoutY="7.0" spacing="9.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
-         <children>
-            <JFXButton fx:id="menu1" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#action" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
-               <graphic>
-                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE_PLUS" size="20" />
-               </graphic>
-            </JFXButton>
-            <Separator prefHeight="0.0" prefWidth="0.0" />
-            <JFXButton fx:id="menu3" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#action" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
-               <graphic>
-                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="20" />
-               </graphic>
-            </JFXButton>
-            <JFXButton fx:id="menu4" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#actionFilter" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
-               <graphic>
-                  <MaterialDesignIconView fill="WHITE" glyphName="FILTER_OUTLINE" size="20" />
-               </graphic>
-            </JFXButton>
-            <JFXButton fx:id="menu5" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="45.0" prefWidth="45.0" styleClass="button_auth" stylesheets="@../style/style.css" textFill="WHITE">
-               <graphic>
-                  <MaterialDesignIconView fill="WHITE" glyphName="BACKUP_RESTORE" size="20" />
-               </graphic>
-            </JFXButton>
-            <Separator prefHeight="0.0" prefWidth="0.0" />
-         </children>
-      </VBox>
-      <StackPane fx:id="stackPaneAddEmployee" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="676.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style.css" vbarPolicy="NEVER">
-               <content>
-                  <VBox alignment="TOP_CENTER" fillWidth="false" spacing="10.0">
-                     <children>
-                        <AnchorPane>
-                           <children>
-                              <Pane layoutX="8.0" layoutY="55.0" prefHeight="172.0" prefWidth="647.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="9.0">
-                                 <effect>
-                                    <DropShadow color="#009688" height="37.175" offsetY="1.0" radius="19.948749999999997" spread="0.05" width="44.62" />
-                                 </effect>
-                                 <children>
-                                    <HBox alignment="CENTER" layoutX="11.0" layoutY="74.0" prefHeight="25.0" prefWidth="631.0" spacing="40.0">
-                                       <children>
-                                          <HBox alignment="CENTER">
-                                             <children>
-                                                <JFXTextField fx:id="nameEmployee" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Имя" unFocusColor="#c3c3c3" />
-                                                <MaterialDesignIconView fx:id="checkName" glyphName="CLOSE_CIRCLE_OUTLINE" size="15" style="-fx-fill: firebrick;" />
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER">
-                                             <children>
-                                                <JFXTextField fx:id="lastNameEmployee" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Фамилия" unFocusColor="#c3c3c3" />
-                                                <MaterialDesignIconView fx:id="checkLastName" glyphName="CLOSE_CIRCLE_OUTLINE" size="15" style="-fx-fill: firebrick;" />
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER">
-                                             <children>
-                                                <JFXTextField fx:id="patronymicEmployee" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Отчество" unFocusColor="#c3c3c3" />
-                                                <MaterialDesignIconView fx:id="checkPatronymic" glyphName="CLOSE_CIRCLE_OUTLINE" size="15" style="-fx-fill: firebrick;" />
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                    <Circle fx:id="avatar" fill="DODGERBLUE" layoutX="65.0" layoutY="11.0" radius="42.0" stroke="WHITE" strokeType="INSIDE">
-                                       <effect>
-                                          <DropShadow color="#2f59ff" offsetY="4.0" />
-                                       </effect>
-                                    </Circle>
-                                    <Label alignment="TOP_RIGHT" layoutX="504.0" layoutY="5.0" prefHeight="17.0" prefWidth="128.0" text="Основные данные" textFill="#bcb7b7">
-                                       <graphic>
-                                          <MaterialDesignIconView fill="DODGERBLUE" glyphName="FOLDER_ACCOUNT" size="18" />
-                                       </graphic>
-                                    </Label>
-                                    <HBox layoutX="22.0" layoutY="126.0" spacing="30.0">
-                                       <children>
-                                          <JFXDatePicker fx:id="birthdayEmployee" editable="false" prefHeight="25.0" prefWidth="191.0" promptText="Дата рождения" showWeekNumbers="true" />
-                                          <HBox>
-                                             <children>
-                                                <JFXTextField fx:id="mobilePhoneEmployee" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Мобильный телефон" unFocusColor="#c3c3c3" />
-                                                <MaterialDesignIconView fx:id="iconPhone" glyphName="CELLPHONE_IPHONE" size="20" style="-fx-fill: #009688;" />
-                                             </children>
-                                          </HBox>
-                                          <HBox>
-                                             <children>
-                                                <JFXTextField fx:id="emailEmployee" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Почтовый ящик" unFocusColor="#c3c3c3" />
-                                                <MaterialDesignIconView fx:id="iconMail" glyphName="EMAIL_OPEN" size="20" style="-fx-fill: #009688;" />
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane>
-                           <children>
-                              <Pane layoutX="21.0" layoutY="16.0" prefHeight="109.0" prefWidth="647.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
-                                 <effect>
-                                    <DropShadow color="#009688" height="29.73" offsetY="1.0" radius="18.0875" spread="0.05" width="44.62" />
-                                 </effect>
-                                 <children>
-                                    <Label alignment="TOP_RIGHT" layoutX="488.0" layoutY="5.0" prefHeight="18.0" prefWidth="144.0" text="Паспортные данные" textFill="#bcb7b7">
-                                       <graphic>
-                                          <MaterialDesignIconView fill="DODGERBLUE" glyphName="FILE_POWERPOINT_BOX" size="18" />
-                                       </graphic>
-                                    </Label>
-                                    <HBox layoutX="11.0" layoutY="11.0" spacing="25.0">
-                                       <children>
-                                          <JFXTextField fx:id="nationality" prefHeight="25.0" prefWidth="164.0" promptText="Гражданство" />
-                                          <JFXTextField fx:id="authority" prefHeight="25.0" prefWidth="245.0" promptText="Кем выдан" />
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="53.0" prefHeight="25.0" prefWidth="618.0" spacing="25.0">
-                                       <children>
-                                          <HBox prefHeight="25.0" prefWidth="166.0" spacing="10.0">
-                                             <children>
-                                                <JFXTextField fx:id="serial" prefHeight="25.0" prefWidth="52.0" promptText="Серия" />
-                                                <JFXTextField fx:id="number" prefHeight="25.0" prefWidth="129.0" promptText="Номер" />
-                                             </children>
-                                          </HBox>
-                                          <JFXDatePicker fx:id="dateIn" prefHeight="25.0" prefWidth="200.0" promptText="Дата выдочи" />
-                                          <JFXDatePicker fx:id="dateOut" prefHeight="25.0" prefWidth="200.0" promptText="Срок действия" />
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="297.0" prefWidth="674.0" VBox.vgrow="ALWAYS">
-                           <children>
-                              <Pane layoutX="21.0" layoutY="16.0" prefHeight="142.0" prefWidth="648.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
-                                 <effect>
-                                    <DropShadow color="#009688" height="29.73" offsetY="1.0" radius="18.0875" spread="0.05" width="44.62" />
-                                 </effect>
-                                 <children>
-                                    <Label alignment="TOP_RIGHT" layoutX="435.0" layoutY="5.0" prefHeight="18.0" prefWidth="193.0" text="Водительское удостовирение" textFill="#bcb7b7">
-                                       <graphic>
-                                          <MaterialDesignIconView fill="DODGERBLUE" glyphName="FILE_POWERPOINT_BOX" size="18" />
-                                       </graphic>
-                                    </Label>
-                                    <HBox layoutX="11.0" layoutY="11.0" spacing="25.0">
-                                       <children>
-                                          <JFXTextField fx:id="authority1" prefHeight="25.0" prefWidth="347.0" promptText="Кем выдано" />
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER" layoutX="11.0" layoutY="53.0" spacing="25.0">
-                                       <children>
-                                          <JFXTextField fx:id="number1" prefHeight="25.0" prefWidth="190.0" promptText="Номер" />
-                                          <JFXDatePicker fx:id="dateIn1" prefHeight="25.0" prefWidth="190.0" promptText="Дата выдочи" />
-                                          <JFXDatePicker fx:id="dateOut1" prefHeight="25.0" prefWidth="190.0" promptText="Срок действия" />
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER" layoutX="14.0" layoutY="95.0" prefHeight="33.0" prefWidth="546.0" spacing="10.0">
-                                       <children>
-                                          <JFXCheckBox fx:id="am1" text="AM" />
-                                          <JFXCheckBox fx:id="a11" text="A1" />
-                                          <JFXCheckBox fx:id="a1" text="A" />
-                                          <JFXCheckBox fx:id="c1" text="C" />
-                                          <JFXCheckBox fx:id="b1" text="B" />
-                                          <JFXCheckBox fx:id="d1" text="D" />
-                                          <JFXCheckBox fx:id="be1" text="BE" />
-                                          <JFXCheckBox fx:id="ce1" text="CE" />
-                                          <JFXCheckBox fx:id="de1" text="DE" />
-                                          <JFXCheckBox fx:id="i1" text="I" />
-                                          <JFXCheckBox fx:id="f1" text="F" />
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </Pane>
-                              <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="251.0" layoutY="195.0" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: green;" text="Добавить сотрудника" textFill="WHITE" />
-                           </children>
-                           <VBox.margin>
-                              <Insets bottom="20.0" />
-                           </VBox.margin>
-                        </AnchorPane>
-                     </children>
-                  </VBox>
-               </content>
-            </ScrollPane>
-            <JFXDialog fx:id="dialog" styleClass="jfx-dialog-layout" stylesheets="@../../../../../../../projects/SystemCompany/src/main/resources/fxml/administration_fxml/style.css" transitionType="LEFT" />
-         </children>
-      </StackPane>
    </children>
 </AnchorPane>

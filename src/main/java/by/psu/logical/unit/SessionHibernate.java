@@ -48,7 +48,7 @@ public class SessionHibernate {
         }
     }
 
-    public Session getSession() {
+    private Session getSession() {
         return factory.openSession();
     }
 
