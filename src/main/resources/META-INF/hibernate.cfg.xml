@@ -16,6 +16,7 @@
 
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">Raidmax123</property>
+        <property name="hibernate.show_sql">true</property>
         <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 
         <mapping class="by.psu.logical.model.employee.Passport"/>

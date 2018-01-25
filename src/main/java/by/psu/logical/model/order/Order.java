@@ -1,7 +1,6 @@
 package by.psu.logical.model.order;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "orders")
@@ -70,5 +69,11 @@ public class Order {
 
     public void setReport(Report report) {
         this.report = report;
+    }
+
+    @Override
+    public String toString() {
+        return "Организация - " + organization.getTitle() +
+                ", Место проведения - " + place.getTitle();
     }
 }

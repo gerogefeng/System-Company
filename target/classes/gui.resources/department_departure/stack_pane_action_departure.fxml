@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.ListSelectionView?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="gui.resources.department_departure.StackPaneActionDeparture"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<StackPane fx:id="stackPane" prefHeight="597.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_departure.CActionDeparture">
+   <children>
+      <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="627.0" prefWidth="800.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="545.0" prefWidth="664.0">
+               <children>
+                  <Pane layoutX="8.0" layoutY="22.0" prefHeight="506.0" prefWidth="647.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="9.0">
+                     <effect>
+                        <DropShadow color="#009688" height="37.175" offsetY="1.0" radius="19.948749999999997" spread="0.05" width="44.62" />
+                     </effect>
+                     <children>
+                        <Label alignment="TOP_RIGHT" layoutX="257.0" layoutY="5.0" prefHeight="18.0" prefWidth="134.0" text="Оформление заказа" textFill="#bcb7b7">
+                           <graphic>
+                              <MaterialDesignIconView fill="DODGERBLUE" glyphName="PACKAGE_VARIANT" size="18" />
+                           </graphic>
+                        </Label>
+                        <VBox alignment="CENTER" layoutX="11.0" layoutY="76.0" spacing="30.0" />
+                        <HBox alignment="CENTER" layoutX="17.0" layoutY="96.0" spacing="40.0">
+                           <children>
+                              <JFXDatePicker fx:id="startDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="290.0" promptText="Дата начала мероприятия" showWeekNumbers="true" />
+                              <JFXDatePicker fx:id="endDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="290.0" promptText="Дата окончания мероприятия" showWeekNumbers="true" />
+                           </children>
+                        </HBox>
+                        <JFXComboBox fx:id="orderComboBox" layoutX="17.0" layoutY="51.0" prefHeight="25.0" prefWidth="614.0" promptText="Выберите заказ" />
+                        <VBox layoutX="17.0" layoutY="365.0" prefHeight="95.0" prefWidth="620.0" spacing="15.0">
+                           <children>
+                              <JFXComboBox fx:id="employeeComboBox" prefHeight="25.0" prefWidth="625.0" promptText="Выберите сотрудника" />
+                              <JFXTextField fx:id="describeEmployee" prefHeight="25.0" prefWidth="614.0" promptText="Обязанности сотрудника" />
+                              <JFXComboBox fx:id="autoComboBox" prefHeight="25.0" prefWidth="622.0" promptText="Выберите втомобиль" />
+                           </children>
+                        </VBox>
+                        <ListSelectionView fx:id="listSelected" layoutX="10.0" layoutY="138.0" prefHeight="218.0" prefWidth="635.0" />
+                        <Label layoutX="524.0" layoutY="348.0" text="Общий вес:" />
+                        <Label fx:id="weight" alignment="CENTER_RIGHT" layoutX="588.0" layoutY="348.0" prefHeight="17.0" prefWidth="34.0" />
+                        <Label fx:id="weight1" alignment="CENTER_RIGHT" layoutX="623.0" layoutY="348.0" prefHeight="17.0" prefWidth="13.0" text="кг" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="actionButton" buttonType="RAISED" onAction="#action" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Добавить" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

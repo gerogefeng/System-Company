@@ -1,6 +1,9 @@
 package by.psu.logical.model.transport;
 
+import by.psu.logical.model.departure.Departure;
+
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "transports")
@@ -34,6 +37,14 @@ public class Transport {
     @JoinColumn(name = "id_model")
     private ModelAuto modelAuto;
 
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinTable(
+            name = "car_rental",
+            joinColumns = { @JoinColumn(name = "id_transport") },
+            inverseJoinColumns = { @JoinColumn(name = "id_departure") }
+    )
+    private Set<Departure> departures;
+
     public Transport(String engineType, int capacity, int status, String photoURL, MarkAuto markAuto, ModelAuto modelAuto) {
         this.engineType = engineType;
         this.capacity = capacity;
@@ -44,6 +55,14 @@ public class Transport {
     }
 
     public Transport() {
+    }
+
+    public Set<Departure> getDepartures() {
+        return departures;
+    }
+
+    public void setDepartures(Set<Departure> departures) {
+        this.departures = departures;
     }
 
     public int getSeats() {
@@ -112,15 +131,6 @@ public class Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "id=" + id +
-                ", engineType='" + engineType + '\'' +
-                ", capacity=" + capacity +
-                ", seats=" + seats +
-                ", status=" + status +
-                ", photoURL='" + photoURL + '\'' +
-                ", markAuto=" + markAuto +
-                ", modelAuto=" + modelAuto +
-                '}';
+        return getMarkAuto().getTitle() + " " + getModelAuto().getTitle();
     }
 }

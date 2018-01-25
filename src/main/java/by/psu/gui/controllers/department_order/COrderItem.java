@@ -28,7 +28,9 @@ public class COrderItem implements Initializable, ControllerFXLoader{
     @FXML private Label organization;
 
     @FXML private CViewItems cViewItems = null;
+
     private Order order = null;
+
     /**
      * Called to initialize a controller after its root element has been
      * completely processed.

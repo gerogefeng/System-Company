@@ -39,6 +39,7 @@ public class CViewItems implements Initializable, ControllerFX {
     }
 
     private void loadItems(){
+        System.out.println(os.readALL().size());
         os.readALL().forEach(order -> {
             if(!order.isStatus()) {
                 LoaderFXML.loaderController(

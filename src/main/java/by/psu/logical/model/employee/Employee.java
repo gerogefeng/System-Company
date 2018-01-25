@@ -121,15 +121,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", avatar='" + avatar + '\'' +
-                ", passport=" + passport +
-                ", driver=" + driver +
-                ", card=" + card +
-                '}';
+        return getName() + " " + getLastName() + " " + getPatronymic();
     }
 }

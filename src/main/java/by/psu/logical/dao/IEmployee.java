@@ -2,6 +2,7 @@ package by.psu.logical.dao;
 
 import by.psu.logical.model.employee.Employee;
 
-public interface IEmployee extends ICRUD<Employee>{
+import java.util.List;
 
+public interface IEmployee extends ICRUD<Employee>{
 }

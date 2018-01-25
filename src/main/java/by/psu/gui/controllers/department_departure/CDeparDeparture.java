@@ -27,7 +27,7 @@ public class CDeparDeparture implements Initializable, ControllerFX{
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        actionGetDepartures();
     }
 
     @Override
