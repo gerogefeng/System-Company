@@ -1,0 +1,46 @@
+CREATE OR REPLACE FUNCTION action_employee_function() RETURNS TRIGGER AS $$
+DECLARE
+    mstr varchar(30);
+    astr varchar(100);
+    retstr varchar(254);
+BEGIN
+    IF    TG_OP = 'INSERT' THEN
+        astr = new.name ||  ' ' ||  new.last_name || ' ' ||  new.patronymic;
+        mstr := 'Add new employee ';
+        retstr := mstr || astr;
+        INSERT INTO log_employee(operation, datetime) values (retstr, NOW());
+        RETURN NEW;
+    ELSIF TG_OP = 'UPDATE' THEN
+        astr = new.name ||  ' ' || new.last_name|| ' ' || new.patronymic;
+        mstr := 'Update employee ';
+        retstr := mstr || astr;
+        INSERT INTO log_employee(operation, datetime) values (retstr,NOW());
+        RETURN NEW;
+    ELSIF TG_OP = 'DELETE' THEN
+        astr =  OLD.name ||  ' ' || OLD.last_name ||  ' ' || OLD.patronymic;
+        mstr := 'Remove employee ';
+        retstr := mstr || astr;
+        INSERT INTO  log_employee(operation, datetime) values (retstr,NOW());
+        RETURN OLD;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER action_employee_trigger
+AFTER INSERT OR UPDATE OR DELETE ON employees FOR EACH ROW EXECUTE PROCEDURE action_employee_function();
+
+CREATE OR REPLACE FUNCTION delete_employee_function() RETURNS TRIGGER AS $$
+DECLARE
+BEGIN
+    IF TG_OP = 'DELETE' THEN
+        DELETE FROM users WHERE users.id_employee = old.id;
+        DELETE FROM private_cards WHERE private_cards.id = old.id;
+        DELETE FROM passports WHERE passports.id_employee = old.id;
+        DELETE FROM driver_licences_category dlc USING driver_licences dl WHERE dl.id_employee = old.id;
+        RETURN OLD;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER delete_employee_trigger
+BEFORE DELETE ON employees FOR EACH ROW EXECUTE PROCEDURE delete_employee_function();
