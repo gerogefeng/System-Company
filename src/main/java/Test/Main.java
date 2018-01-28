@@ -1,26 +1,42 @@
 package Test;
 
 
+import by.psu.logical.model.employee.Driver;
 import by.psu.logical.model.employee.Employee;
 import by.psu.logical.model.employee.Passport;
 import by.psu.logical.service.employee_services.EmployeeService;
 import by.psu.logical.service.employee_services.PassportService;
 import by.psu.logical.service.transport_services.TransportService;
+import by.psu.logical.unit.SessionHibernate;
+import net.sf.dynamicreports.jasper.builder.JasperReportBuilder;
+import net.sf.dynamicreports.report.builder.DynamicReports;
+import net.sf.dynamicreports.report.builder.column.Columns;
+import net.sf.dynamicreports.report.builder.component.Components;
+import net.sf.dynamicreports.report.builder.datatype.DataTypes;
+import net.sf.dynamicreports.report.constant.HorizontalAlignment;
+import net.sf.dynamicreports.report.exception.DRException;
+import net.sf.jasperreports.components.table.Column;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.repo.JasperDesignReportResource;
+import org.hibernate.Session;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.sql.*;
 import java.util.Date;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        PassportService passportService = new PassportService();
+        /*PassportService passportService = new PassportService();
         EmployeeService employeeService = new EmployeeService();
 
-        /*Passport passport = new Passport("Belarus", "OVDE", "MC", "112215515", new Date(), new Date());
+        *//*Passport passport = new Passport("Belarus", "OVDE", "MC", "112215515", new Date(), new Date());
         Card card = new Card(new Date(), "+375299479630", "jsdevelop..@ya.com");
         Employee employee = new Employee("Pavel", "Talaiko", "Dmitrievich", null, passport, null, card);
         card.setEmployee(employee);
         passport.setEmployee(employee);
-        employeeService.create(employee);*/
-        /*Passport passport = new Passport();
+        employeeService.create(employee);*//*
+         *//*Passport passport = new Passport();
         passport.setNationality("fasdafsafdas");
         passport.setDepartment("fdsfsfasd");
         passport.setSerialPassport("MC");
@@ -44,19 +60,18 @@ public class Main {
         passport2.setEmployee(employee);
 
         passportService.create(passport);
-        passportService.create(passport2);*/
+        passportService.create(passport2);*//*
 
         TransportService transportService = new TransportService();
 
         transportService.readALL().forEach(System.out::println);
 
-        /*Employee employee = employeeService.read(3);
+        *//*Employee employee = employeeService.read(3);
         employeeService.update(employee);
         passportService.delete(employee.getPassport().get(0));
-*/
-        /*Passport passport = passportService.read(1);
+*//*
+         *//*Passport passport = passportService.read(1);
         passport.setEmployee(employeeService.read(1));
         passportService.update(passport);*/
-
     }
 }

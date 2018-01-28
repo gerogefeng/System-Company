@@ -57,7 +57,7 @@
 }
 
 .panel-item-employee:hover{
-    -fx-background-color: snow;
+    -fx-background-color: #fff8f9;
 }
 
 .button_close_item:hover{

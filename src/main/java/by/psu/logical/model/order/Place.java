@@ -24,8 +24,16 @@ public class Place {
     @Column(name = "data_end")
     private Date dateEnd;
 
-    @OneToMany(mappedBy = "place")
+    @OneToMany(mappedBy = "place"/*, cascade = {
+            CascadeType.DETACH,
+            CascadeType.MERGE,
+            CascadeType.PERSIST,
+            CascadeType.REFRESH
+    }*/)
     private Set<Order> orders;
+
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public Place(String title, Date dateBegin, Date dateEnd) {
         this.title = title;
@@ -34,6 +42,10 @@ public class Place {
     }
 
     public Place() {}
+
+    public boolean isDelete() {
+        return delete;
+    }
 
     public Set<Order> getOrders() {
         return orders;

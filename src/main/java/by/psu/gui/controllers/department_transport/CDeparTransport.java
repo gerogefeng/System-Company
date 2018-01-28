@@ -1,6 +1,5 @@
 package by.psu.gui.controllers.department_transport;
 
-import Test.Main;
 import by.psu.gui.LoaderFXML;
 import by.psu.gui.controllers.ControllerMain;
 import by.psu.gui.logicalGui.ControllerFX;

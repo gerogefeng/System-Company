@@ -1,8 +1,7 @@
 package by.psu.logical.model.transport;
 
-import by.psu.logical.model.departure.Departure;
-
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -37,13 +36,11 @@ public class Transport {
     @JoinColumn(name = "id_model")
     private ModelAuto modelAuto;
 
-    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
-    @JoinTable(
-            name = "car_rental",
-            joinColumns = { @JoinColumn(name = "id_transport") },
-            inverseJoinColumns = { @JoinColumn(name = "id_departure") }
-    )
-    private Set<Departure> departures;
+    @OneToMany(mappedBy = "departure")
+    private Set<TransportRental> departures;
+
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public Transport(String engineType, int capacity, int status, String photoURL, MarkAuto markAuto, ModelAuto modelAuto) {
         this.engineType = engineType;
@@ -57,11 +54,19 @@ public class Transport {
     public Transport() {
     }
 
-    public Set<Departure> getDepartures() {
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
+    }
+
+    public Set<TransportRental> getDepartures() {
         return departures;
     }
 
-    public void setDepartures(Set<Departure> departures) {
+    public void setDepartures(Set<TransportRental> departures) {
         this.departures = departures;
     }
 
@@ -132,5 +137,26 @@ public class Transport {
     @Override
     public String toString() {
         return getMarkAuto().getTitle() + " " + getModelAuto().getTitle();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Transport)) return false;
+        Transport transport = (Transport) o;
+        return getId() == transport.getId() &&
+                getCapacity() == transport.getCapacity() &&
+                getSeats() == transport.getSeats() &&
+                getStatus() == transport.getStatus() &&
+                Objects.equals(getEngineType(), transport.getEngineType()) &&
+                Objects.equals(getPhotoURL(), transport.getPhotoURL()) &&
+                Objects.equals(getMarkAuto(), transport.getMarkAuto()) &&
+                Objects.equals(getModelAuto(), transport.getModelAuto()) &&
+                Objects.equals(getDepartures(), transport.getDepartures());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getEngineType(), getCapacity(), getSeats(), getStatus(), getPhotoURL(), getMarkAuto(), getModelAuto(), getDepartures());
     }
 }

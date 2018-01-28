@@ -53,6 +53,7 @@ public class SessionHibernate {
     }
 
     public void closeFactory(){
-        factory.close();
+        if(instance != null)
+            factory.close();
     }
 }

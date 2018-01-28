@@ -185,21 +185,4 @@ public class CPlusCar implements Initializable, ControllerFXLoader {
         message.show(title, "Закрыть", 2000, event -> message.unregisterSnackbarContainer(stackPane));
     }
 
-    protected void animationElement(Node node) {
-        Task<Void> animation = new Task<Void>() {
-            @Override
-            protected Void call() throws Exception {
-                try {
-                    Platform.runLater(() -> node.setStyle("-jfx-unfocus-color: brown"));
-                    Thread.sleep(2000);
-                    Platform.runLater(() -> node.setStyle("-jfx-unfocus-color: #c3c3c3"));
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                return null;
-            }
-        };
-        Thread thread = new Thread(animation);
-        thread.start();
-    }
 }

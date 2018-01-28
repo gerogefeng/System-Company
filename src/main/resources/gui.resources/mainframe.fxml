@@ -4,30 +4,36 @@
 <?import com.jfoenix.controls.JFXDialog?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="750.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerMain">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="750.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerMain">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
             <AnchorPane prefHeight="50.0" prefWidth="747.0" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="21.0" layoutY="18.0" text="System LQE" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="18.0">
+                  <Label layoutX="39.0" layoutY="10.0" text="PSU.BY" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="10.0">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="692.0" layoutY="2.0" prefHeight="50.0" prefWidth="60.0" styleClass="menu_footer" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="692.0" layoutY="2.0" onAction="#goToAuthorization" prefHeight="50.0" prefWidth="60.0" styleClass="menu_footer" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <graphic>
-                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="20" />
+                        <MaterialDesignIconView fill="WHITE" glyphName="EXIT_TO_APP" size="20" />
                      </graphic>
                   </JFXButton>
+                  <Label fx:id="statusRow" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="443.0" layoutY="18.0" prefHeight="20.0" prefWidth="226.0" text="Label" textFill="WHITE" AnchorPane.rightAnchor="80.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="31.0" text="Talaiko Pavel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font></Label>
                </children>
             </AnchorPane>
             <HBox prefHeight="55.0" AnchorPane.leftAnchor="140.0">
@@ -82,18 +88,7 @@
                   </HBox>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="workSpace" layoutY="55.0" prefHeight="402.0" prefWidth="750.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
-               <children>
-                  <VBox alignment="CENTER" layoutX="282.0" layoutY="102.0" prefHeight="200.0" prefWidth="186.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="102.0">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/icon-pack-04.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-               </children></AnchorPane>
+            <AnchorPane fx:id="workSpace" layoutY="55.0" prefHeight="402.0" prefWidth="750.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
          </children>
       </AnchorPane>
       <JFXDialog fx:id="dialog" />

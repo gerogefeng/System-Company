@@ -2,7 +2,6 @@ package by.psu.logical.model.employee;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 
 @Entity
 @Table(name = "employee_post")
@@ -25,10 +24,12 @@ public class PostsEmployee {
     @Column(name = "date_start")
     private Date dateStart;
 
-
     @Temporal(TemporalType.DATE)
     @Column(name = "date_end")
     private Date dateEnd;
+
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public PostsEmployee(Post post, Employee employee, Date dateStart, Date dateEnd) {
         this.post = post;
@@ -40,6 +41,14 @@ public class PostsEmployee {
 
     public Post getPost() {
         return post;
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public void setPost(Post post) {

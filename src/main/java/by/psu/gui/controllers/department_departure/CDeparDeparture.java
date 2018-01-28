@@ -2,6 +2,7 @@ package by.psu.gui.controllers.department_departure;
 
 import by.psu.gui.LoaderFXML;
 import by.psu.gui.logicalGui.ControllerFX;
+import by.psu.logical.model.departure.Departure;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -17,6 +18,8 @@ public class CDeparDeparture implements Initializable, ControllerFX{
 
     @FXML private StackPane stackPane;
 
+    private static CDeparDeparture cDeparDeparture;
+
     /**
      * Called to initialize a controller after its root element has been
      * completely processed.
@@ -27,7 +30,12 @@ public class CDeparDeparture implements Initializable, ControllerFX{
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        cDeparDeparture = this;
         actionGetDepartures();
+    }
+
+    public static CDeparDeparture getcDeparDeparture() {
+        return cDeparDeparture;
     }
 
     @Override
@@ -35,11 +43,11 @@ public class CDeparDeparture implements Initializable, ControllerFX{
 
     }
 
-    @FXML private void actionGetDepartures() {
+    @FXML void actionGetDepartures() {
         LoaderFXML.loaderController("/gui.resources/department_departure/stack_pane_view_departure.fxml", stackPane, this);
     }
 
-    @FXML private void actionPlusDeparture() {
+    @FXML void actionPlusDeparture() {
         LoaderFXML.loaderController("/gui.resources/department_departure/stack_pane_action_departure.fxml", stackPane, this);
     }
 }

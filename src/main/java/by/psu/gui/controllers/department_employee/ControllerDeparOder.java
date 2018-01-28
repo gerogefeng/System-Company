@@ -2,14 +2,18 @@ package by.psu.gui.controllers.department_employee;
 
 import by.psu.gui.LoaderFXML;
 import by.psu.gui.controllers.ControllerMain;
+import by.psu.gui.frames.FrameWork;
 import by.psu.gui.logicalGui.ControllerFX;
+import by.psu.logical.JasperReport;
 import by.psu.logical.service.employee_services.EmployeeService;
 import com.jfoenix.controls.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
 import org.apache.log4j.Logger;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -61,8 +65,21 @@ public class ControllerDeparOder implements Initializable, ControllerFX {
         LoaderFXML.loaderController("/gui.resources/personal_department/stack_pane_employee_items.fxml", workspace, this);
     }
 
-    @FXML
-    private void actionFilter() {
+    @FXML private void actionDataInFile() {
+        FileChooser fileChooser = new FileChooser();
+
+        // Set extension filter
+        FileChooser.ExtensionFilter extFilter =
+                new FileChooser.ExtensionFilter("HTML files (*.html)", "*.html");
+
+
+        fileChooser.getExtensionFilters().add(extFilter);
+
+        // Show open file dialog
+        File file = fileChooser.showSaveDialog(FrameWork.getGlobalStage());
+        if (file != null) {
+            new JasperReport(file).getReport();
+        }
 
     }
 

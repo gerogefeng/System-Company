@@ -29,7 +29,7 @@ public class LoaderFXML {
             }
 
             metadata = new Object[]{controller, child.hashCode()};
-
+            
             AnchorPane.setLeftAnchor(child, 0.0);
             AnchorPane.setTopAnchor(child, 0.0);
             AnchorPane.setRightAnchor(child, 0.0);

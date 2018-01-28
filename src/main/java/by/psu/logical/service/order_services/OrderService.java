@@ -1,6 +1,5 @@
 package by.psu.logical.service.order_services;
 
-import by.psu.gui.Converter;
 import by.psu.logical.model.order.Order;
 import by.psu.logical.service.AbstractService;
 import by.psu.logical.unit.SessionHibernate;
@@ -20,10 +19,20 @@ public class OrderService extends AbstractService<Order> {
     public List<Order> readAllActiveOrder(){
         Session session = SessionHibernate.getInstance().retriver();
         List<Order> orders = new ArrayList<>();
-        Query query = session.createQuery("from Order o WHERE o.place.dateEnd > :date");
+        Query query = session.createQuery("from Order o WHERE o.place.dateEnd > :date AND o.delete = false");
         query.setParameter("date", new Date(), TemporalType.DATE);
         orders = query.getResultList();
         SessionHibernate.getInstance().putback(session);
         return orders;
+    }
+
+    public void deleteOrder(int id) {
+        Session session = SessionHibernate.getInstance().retriver();
+        session.getTransaction().begin();
+        Query query = session.createQuery("delete from Order ord where ord.id = :id");
+        query.setParameter("id", id);
+        query.executeUpdate();
+        session.getTransaction().commit();
+        SessionHibernate.getInstance().putback(session);
     }
 }

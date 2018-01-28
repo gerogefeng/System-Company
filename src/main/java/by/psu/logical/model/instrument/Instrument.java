@@ -27,6 +27,9 @@ public class Instrument {
     @Column(name = "date_end")
     private Date dateEnd;
 
+    @Column(name = "delete_status")
+    private boolean delete;
+
     public Instrument(String title, int weight, Date dateBuy, Date dateEnd) {
         this.title = title;
         this.weight = weight;
@@ -35,6 +38,14 @@ public class Instrument {
     }
 
     public Instrument() {
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public int getId() {
@@ -75,5 +86,11 @@ public class Instrument {
 
     public void setDateEnd(Date dateEnd) {
         this.dateEnd = dateEnd;
+    }
+
+    @Override
+    public String toString() {
+        return "Название: " +
+                "" + title;
     }
 }

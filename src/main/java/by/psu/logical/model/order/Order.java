@@ -20,8 +20,8 @@ public class Order {
     @ManyToOne @JoinColumn(name = "id_report")
     private Report report;
 
-    @Column(name = "deletestatus")
-    private boolean status;
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public Order(Place place, Organization organization, Report report) {
         this.place = place;
@@ -31,12 +31,8 @@ public class Order {
 
     public Order() {}
 
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
-
-    public boolean isStatus() {
-        return status;
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public int getId() {
@@ -69,6 +65,10 @@ public class Order {
 
     public void setReport(Report report) {
         this.report = report;
+    }
+
+    public boolean isDelete() {
+        return delete;
     }
 
     @Override

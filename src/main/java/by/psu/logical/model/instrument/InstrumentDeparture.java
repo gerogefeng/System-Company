@@ -24,13 +24,16 @@ public class InstrumentDeparture {
     @Column(name = "date_end")
     private Date dateEnd;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "id_departure")
     private Departure departure;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_equipment")
     private Instrument instrument;
+
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public InstrumentDeparture(Date dateStart, Date dateEnd, Departure departure, Instrument instrument) {
         this.dateStart = dateStart;
@@ -40,6 +43,14 @@ public class InstrumentDeparture {
     }
 
     public InstrumentDeparture() {
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public int getId() {

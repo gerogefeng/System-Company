@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<StackPane fx:id="stackPaneRoot" prefHeight="799.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_employee.item_employee.CEmployee">
+<StackPane fx:id="stackPaneRoot" prefHeight="799.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_employee.item_employee.CEmployee">
    <children>
       <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../style/style.css" vbarPolicy="NEVER">
          <content>
@@ -115,7 +115,7 @@
                                                 <JFXTextField fx:id="numberTextField" prefHeight="25.0" prefWidth="129.0" promptText="Номер" />
                                              </children>
                                           </HBox>
-                                          <JFXDatePicker fx:id="dateInDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="200.0" promptText="Дата выдочи" />
+                                          <JFXDatePicker fx:id="dateInDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="200.0" promptText="Дата выдачи" />
                                           <JFXDatePicker fx:id="dateOutDatePicker" editable="false" overLay="true" prefHeight="25.0" prefWidth="200.0" promptText="Срок действия" />
                                        </children>
                                     </HBox>
@@ -157,7 +157,7 @@
                                     <HBox alignment="CENTER" layoutX="11.0" layoutY="53.0" spacing="25.0">
                                        <children>
                                           <JFXTextField fx:id="numberTextField1" prefHeight="25.0" prefWidth="190.0" promptText="Номер" />
-                                          <JFXDatePicker fx:id="dateInDatePicker1" overLay="true" prefHeight="25.0" prefWidth="190.0" promptText="Дата выдочи" />
+                                          <JFXDatePicker fx:id="dateInDatePicker1" overLay="true" prefHeight="25.0" prefWidth="190.0" promptText="Дата выдачи" />
                                           <JFXDatePicker fx:id="dateOutDatePicker1" overLay="true" prefHeight="25.0" prefWidth="190.0" promptText="Срок действия" />
                                        </children>
                                     </HBox>

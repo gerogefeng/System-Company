@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="453.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="453.0" styleClass="panel_back_end" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.ControllerAuth">
    <children>
       <AnchorPane layoutY="87.0" prefHeight="325.0" prefWidth="453.0" style="-fx-border-radius: 50;" styleClass="panel_front" stylesheets="@style/style.css" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="87.0">
          <children>
@@ -34,7 +34,7 @@
          <children>
             <VBox alignment="CENTER" layoutX="54.0" layoutY="25.0" spacing="80.0">
                <children>
-                  <MaterialDesignIconView fill="WHITE" glyphName="AIRPLAY" size="45" />
+                  <MaterialDesignIconView fx:id="icon" fill="WHITE" glyphName="AIRPLAY" size="45" />
                   <VBox alignment="CENTER" spacing="25.0">
                      <children>
                         <HBox>

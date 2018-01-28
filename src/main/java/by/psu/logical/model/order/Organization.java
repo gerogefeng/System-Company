@@ -18,11 +18,30 @@ public class Organization {
     @OneToMany(mappedBy = "organization")
     private Set<Order> orders;
 
+    @Column(name = "delete_status")
+    private boolean delete;
+
     public Organization(String title) {
         this.title = title;
     }
 
     public Organization() {}
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
+    }
 
     public int getId() {
         return id;

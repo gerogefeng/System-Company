@@ -13,13 +13,18 @@ import by.psu.logical.service.instrument_service.InstrumentService;
 import by.psu.logical.service.order_services.*;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDatePicker;
+import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Circle;
 import javafx.util.Callback;
 import org.controlsfx.control.ListSelectionView;
@@ -38,11 +43,14 @@ public class COrderAction implements Initializable, ControllerFXLoader {
 
     @FXML private JFXButton enterButton;
 
+    @FXML private StackPane stackPane;
+
     @FXML private JFXDatePicker beginDatePicker;
     @FXML private JFXDatePicker endDatePicker;
 
     @FXML private JFXTextField priceTextField;
 
+    @FXML private JFXSnackbar message = null;
     @FXML
     private JFXButton actionButton;
 
@@ -66,7 +74,7 @@ public class COrderAction implements Initializable, ControllerFXLoader {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        message = new JFXSnackbar();
     }
 
     @Override
@@ -83,6 +91,32 @@ public class COrderAction implements Initializable, ControllerFXLoader {
         docTextField.setText(order.getReport().getResource());
         beginDatePicker.setValue(Converter.dateToLocalDate(order.getPlace().getDateBegin()));
         endDatePicker.setValue(Converter.dateToLocalDate(order.getPlace().getDateEnd()));
+
+        place = order.getPlace();
+        organization = order.getOrganization();
+        report = order.getReport();
+    }
+
+    private int orderCheck() {
+        if (titleTextField.getText().isEmpty()) {
+            message("Введите название компании");
+            return 0;
+        }
+        if (placeTextField.getText().isEmpty()) {
+            message("Введите место проведения мероприятия");
+            return -1;
+        }
+        if (beginDatePicker.getValue().isAfter(endDatePicker.getValue())) {
+            message("Ошибочная дата мероприятия " + beginDatePicker.getValue() + " > " + endDatePicker.getValue());
+            return -2;
+        }
+        return 1;
+    }
+
+    private void message(final String title) {
+        if (message.getPopupContainer() == null)
+            message.registerSnackbarContainer(stackPane);
+        message.show(title, "Закрыть", 2000, event -> message.unregisterSnackbarContainer(stackPane));
     }
 
     @Override
@@ -91,16 +125,19 @@ public class COrderAction implements Initializable, ControllerFXLoader {
     }
 
     @FXML private void action(){
+        if(orderCheck() == 1) {
+            place = newInstancePlace(newInstancePlace((place == null) ? new Place() : place));
+            organization = newInstanceOrganization((organization == null) ? new Organization() : organization);
+            report = newInstanceReport((report == null) ? new Report() : report);
+            order = newInstanceOrder((order == null) ? new Order() : order);
 
-        place = newInstancePlace(newInstancePlace((place==null)? new Place() : place));
-        organization = newInstanceOrganization((organization==null)? new Organization() : organization);
-        report = newInstanceReport((report==null) ? new Report() : report);
-        order = newInstanceOrder((order == null) ? new Order() : order);
+            System.out.println();
 
-        placeService.create(place);
-        organizationService.create(organization);
-        reportService.create(report);
-        orderService.create(order);
+            placeService.create(place);
+            organizationService.create(organization);
+            reportService.create(report);
+            orderService.create(order);
+        }
     }
 
     private Organization newInstanceOrganization(Organization organization){

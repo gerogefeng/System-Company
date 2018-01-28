@@ -1,12 +1,17 @@
 package by.psu.gui.frames;
 
 import by.psu.logical.unit.SessionHibernate;
+import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 import org.apache.log4j.Logger;
 
 public class Frame extends Application{
@@ -14,7 +19,7 @@ public class Frame extends Application{
     private static final Logger LOGGER = Logger.getLogger(Frame.class);
 
     private static Stage globalStage = null;
-
+    
     /**
      * The main entry point for all JavaFX applications.
      * The start method is called after the init method has returned,
@@ -36,6 +41,17 @@ public class Frame extends Application{
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         Scene scene = new Scene(fxmlLoader.load());
         scene.setFill(Color.TRANSPARENT);
+        primaryStage.onCloseRequestProperty().addListener(new ChangeListener<EventHandler<WindowEvent>>() {
+            @Override
+            public void changed(ObservableValue<? extends EventHandler<WindowEvent>> observable, EventHandler<WindowEvent> oldValue, EventHandler<WindowEvent> newValue) {
+                System.out.println(454);
+            }
+        });
+        primaryStage.setOnCloseRequest(event -> {
+
+                    SessionHibernate.getInstance().closeFactory();
+                }
+        );
         globalStage = primaryStage;
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -46,6 +62,11 @@ public class Frame extends Application{
         SessionHibernate.getInstance();
         LOGGER.info("init auth main frame.");
         super.init();
+    }
+
+    @Override
+    public void stop() throws Exception {
+        SessionHibernate.getInstance().closeFactory();
     }
 
     public static Stage getGlobalStage() {

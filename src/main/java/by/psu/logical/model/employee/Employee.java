@@ -1,6 +1,7 @@
 package by.psu.logical.model.employee;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -36,6 +37,9 @@ public class Employee {
     @OneToMany(mappedBy = "employee")
     private Set<PostsEmployee> postsEmployees;
 
+    @Column(name = "delete_status")
+    private boolean delete;
+
     public Employee(String name, String lastName, String patronymic, String avatar, Card card) {
         this.name = name;
         this.lastName = lastName;
@@ -45,6 +49,14 @@ public class Employee {
     }
 
     public Employee() {
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public Set<Passport> getPassport() {
@@ -122,5 +134,26 @@ public class Employee {
     @Override
     public String toString() {
         return getName() + " " + getLastName() + " " + getPatronymic();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return getId() == employee.getId() &&
+                Objects.equals(getName(), employee.getName()) &&
+                Objects.equals(getLastName(), employee.getLastName()) &&
+                Objects.equals(getPatronymic(), employee.getPatronymic()) &&
+                Objects.equals(getAvatar(), employee.getAvatar()) &&
+                Objects.equals(getPassport(), employee.getPassport()) &&
+                Objects.equals(getDriver(), employee.getDriver()) &&
+                Objects.equals(getCard(), employee.getCard()) &&
+                Objects.equals(getPostsEmployees(), employee.getPostsEmployees());
+    }
+
+    @Override
+    public int hashCode() {
+        return getId();
     }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="385.0" maxWidth="752.0" minHeight="152.0" minWidth="752.0" prefHeight="152.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.psu.gui.controllers.department_departure.CItemDepartureDelete">
+   <children>
+      <Pane layoutX="9.0" layoutY="14.0" prefHeight="132.0" prefWidth="732.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <effect>
+            <DropShadow color="#009688" height="37.175" offsetY="1.0" radius="19.948749999999997" spread="0.05" width="44.62" />
+         </effect>
+         <children>
+            <VBox layoutX="11.0" layoutY="21.0" prefHeight="38.0" prefWidth="711.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="689.0" spacing="28.0">
+                     <children>
+                        <JFXTextField fx:id="companyTextField" labelFloat="true" prefHeight="25.0" prefWidth="298.0" promptText="Компания" />
+                        <JFXDatePicker fx:id="dateBeginDatePicker" editable="false" prefHeight="25.0" prefWidth="200.0" promptText="Дата начала" />
+                        <JFXDatePicker fx:id="dateEndDatePicker" editable="false" prefHeight="25.0" prefWidth="200.0" promptText="Дата окончания" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="20.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <JFXTextArea fx:id="reason" labelFloat="true" layoutX="22.0" layoutY="81.0" prefHeight="48.0" prefWidth="707.0" promptText="Причина удаления выезда" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="23.0" />
+   </children>
+</AnchorPane>

@@ -8,6 +8,7 @@ import by.psu.logical.model.employee.Employee;
 import by.psu.logical.model.employee.Passport;
 import by.psu.logical.service.employee_services.EmployeeService;
 import com.jfoenix.controls.JFXRadioButton;
+import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -16,6 +17,7 @@ import javafx.scene.Node;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
@@ -29,6 +31,8 @@ public class ControllerItemPane implements Initializable, ControllerFX {
     @FXML
     private JFXTextField searchTextField;
 
+    @FXML StackPane stackPane;
+
     @FXML
     private JFXRadioButton name;
     @FXML
@@ -41,8 +45,11 @@ public class ControllerItemPane implements Initializable, ControllerFX {
     @FXML
     private HBox hBoxRadioButton;
 
+    private JFXSnackbar messager = new JFXSnackbar();
+
     private final EmployeeService employeeService = new EmployeeService();
 
+    private static ControllerItemPane controllerItemPane = null;
     /**
      * Called to initialize a controller after its root element has been
      * completely processed.
@@ -54,7 +61,7 @@ public class ControllerItemPane implements Initializable, ControllerFX {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loadItem();
-
+        controllerItemPane = this;
         List<Employee> list = employeeService.readALL();
         searchTextField.textProperty().addListener((obs, oV, nV) -> {
             vBoxItemEmployee.getChildren().clear();
@@ -120,7 +127,7 @@ public class ControllerItemPane implements Initializable, ControllerFX {
 
     private void loadItem(){
         vBoxItemEmployee.getChildren().clear();
-        employeeService.readALL().forEach(employee -> {
+        employeeService.readAllEmployees().forEach(employee -> {
             Platform.runLater(() ->
                     LoaderFXML.loaderController(
                             "/gui.resources/personal_department/anchorItemEmployee.fxml",
@@ -145,5 +152,16 @@ public class ControllerItemPane implements Initializable, ControllerFX {
                 break;
             }
         }
+    }
+
+    void message(final String title) {
+        if (messager.getPopupContainer() == null)
+            messager.registerSnackbarContainer(stackPane);
+        messager.show(title, "Закрыть",
+                2000, event -> messager.unregisterSnackbarContainer(stackPane));
+    }
+
+    public static ControllerItemPane getControllerItemPane() {
+        return controllerItemPane;
     }
 }

@@ -32,6 +32,7 @@
         <mapping class="by.psu.logical.model.transport.Transport"/>
         <mapping class="by.psu.logical.model.transport.MarkAuto"/>
         <mapping class="by.psu.logical.model.transport.ModelAuto"/>
+        <mapping class="by.psu.logical.model.transport.TransportRental"/>
 
         <mapping class="by.psu.logical.model.order.Order"/>
         <mapping class="by.psu.logical.model.order.Report"/>

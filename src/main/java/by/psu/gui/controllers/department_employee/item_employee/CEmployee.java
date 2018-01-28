@@ -31,6 +31,8 @@ import javafx.scene.shape.Circle;
 import org.apache.log4j.Logger;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.*;
 
@@ -167,10 +169,20 @@ public class CEmployee implements Initializable, ControllerFXLoader {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         avatar.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
-            avr = new File(LoaderFilesFX.configureFileImageChooser().getAbsolutePath());
-            
-            //avatar.setFill(new ImagePattern(new Image("")));
+            File file = LoaderFilesFX.configureFileImageChooser();
+            if(file != null) {
+                avr = file;
+                System.out.println(file.getAbsolutePath());
+                Image image = null;
+                try {
+                    image = new Image(new FileInputStream(file));
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                avatar.setFill(new ImagePattern(image));
+            }
         });
+
         birthdayDatePicker.setDialogParent(stackPaneRoot);
 
         vBoxPassports.getChildren().remove(anchorPane);
@@ -364,6 +376,15 @@ public class CEmployee implements Initializable, ControllerFXLoader {
         birthdayDatePicker.setValue(Converter.dateToLocalDate(card.getBirthday()));
         mobilePhoneTextField.setText(card.getNumberPhone());
         mailTextField.setText(card.getEmail());
+        if (employee.getAvatar() != null){
+            try {
+
+                Image image = new Image(new FileInputStream(employee.getAvatar()));
+                avatar.setFill(new ImagePattern(image));
+            } catch (FileNotFoundException e) {
+                employee.setAvatar(null);
+            }
+        }
         for (Passport item : employee.getPassport()) {
             actionAddPassport();
             passport = item;
@@ -427,7 +448,7 @@ public class CEmployee implements Initializable, ControllerFXLoader {
                     nameTextField.getText(),
                     lastNameTextField.getText(),
                     patronymicTextField.getText(),
-                    null,
+                    (avr == null) ? null : avr.getAbsolutePath(),
                     card
             );
 
@@ -459,7 +480,7 @@ public class CEmployee implements Initializable, ControllerFXLoader {
             employee.setName(nameTextField.getText());
             employee.setLastName(lastNameTextField.getText());
             employee.setPatronymic(patronymicTextField.getText());
-
+            employee.setAvatar((avr == null) ? null : avr.getAbsolutePath());
             employee.setCard(newInstanceCard(card, employee));
 
 

@@ -15,14 +15,30 @@ public class Report {
     @Column(name = "resource_document")
     private String resource;
 
-    @OneToMany(mappedBy = "report")
+    @OneToMany(mappedBy = "report"/*, cascade = {
+            CascadeType.DETACH,
+            CascadeType.MERGE,
+            CascadeType.PERSIST,
+            CascadeType.REFRESH
+    }*/)
     private Set<Order> orders;
+
+    @Column(name = "delete_status")
+    private boolean delete;
 
     public Report(String resource) {
         this.resource = resource;
     }
 
     public Report() {
+    }
+
+    public boolean isDelete() {
+        return delete;
+    }
+
+    public void setDelete(boolean delete) {
+        this.delete = delete;
     }
 
     public Set<Order> getOrders() {
