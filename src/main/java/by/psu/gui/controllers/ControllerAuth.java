@@ -79,7 +79,6 @@ public class ControllerAuth implements Initializable{
             Frame.getGlobalStage().close();
         });
     }
-
     @FXML private void actionCostume(){
         Frame.getGlobalStage().setIconified(true);
     }
